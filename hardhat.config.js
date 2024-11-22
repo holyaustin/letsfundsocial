@@ -8,15 +8,14 @@ module.exports = {
     localhost: {
       url: 'http://127.0.0.1:8545',
     },
-    aiaTestnet: {
-      url: 'https://aia-dataseed1-testnet.aiachain.org',
+    arbitrumSepolia: {
+      url: 'https://sepolia-rollup.arbitrum.io/rpc',
+      chainId: 421614,
       accounts: [process.env.NEXT_PUBLIC_PRIVATE_KEY],
-      chainId: 1320,
     },
-    aiaMainnet: {
-      url: 'https://aia-dataseed3.aiachain.org',
+    arbitrumOne: {
+      url: 'https://arb1.arbitrum.io/rpc',
       accounts: [process.env.NEXT_PUBLIC_PRIVATE_KEY],
-      chainId: 1319,
     },
   },
   solidity: {
