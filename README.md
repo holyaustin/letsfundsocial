@@ -2,6 +2,12 @@
 
 "letsfund" is a groundbreaking Web3 charity fundraising platform designed to revolutionize the way charitable organizations raise funds and engage with their communities. Deployed on the AIA Blockchain, letsfund combines the transparency and security of blockchain technology with an intuitive user experience, allowing both donors and beneficiaries to experience a seamless and trustworthy process. By leveraging decentralized technologies, letsfund aims to minimize overhead costs, enhance donor engagement, and ensure that contributions have a direct and measurable impact.
 
+Live Application : https://letsfundsocial.vercel.app/
+
+Arbitrum Sepolia Contract deployed : https://sepolia-explorer.arbitrum.io/address/0xF800824300b52E3ba32d4ac976D256BEdF2952d0
+
+
+
 ![Charity Marketplace](./screenshots/letsfund2.png)
 
 Letsfund operates as a decentralized crowdfunding platform dedicated to charitable causes. Whether it's supporting humanitarian projects, funding healthcare initiatives, providing educational resources, or aiding disaster relief efforts, letsfund empowers organizations and individuals to raise funds effectively. The platform assures donors that their contributions are transparent and utilized appropriately, addressing the common concerns regarding the effectiveness of charitable donations.

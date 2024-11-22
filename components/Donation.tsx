@@ -39,7 +39,7 @@ const Donation: React.FC<ComponentProp> = ({ comment, support }) => {
         )}
 
         <div className="flex justify-start items-center">
-          <span>{support?.amount.toFixed(2)} AIA</span>
+          <span>{support?.amount.toFixed(2)} ETH</span>
           <BsDot size={30} className="text-gray-300" />
           <Moment className="text-gray-500" toNow>
             {support?.timestamp}

@@ -28,7 +28,7 @@ const Card: React.FC<{ charity: CharityStruct }> = ({ charity }) => {
         <div>
           <h4 className="text-xl font-medium capitalize mb-1">{charity.name}</h4>
           <div className="flex justify-start items-center">
-            <span>{charity.amount.toFixed(2)} AIA</span>
+            <span>{charity.amount.toFixed(2)} ETH</span>
             <BsDot size={30} className="text-gray-300" />
             <span className="text-gray-500">
               {charity.donations == 1

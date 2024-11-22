@@ -28,7 +28,7 @@ const Payment: React.FC<ComponentProp> = ({ charity, supports, owner }) => {
             <FaEthereum />
             <span>{charity.raised.toFixed(2)}</span>
           </h4>
-          <span className="text-gray-600">raised of {charity.amount.toFixed(2)} AIA target</span>
+          <span className="text-gray-600">raised of {charity.amount.toFixed(2)} ETH target</span>
         </div>
 
         <div className="h-1 bg-gray-300 rounded-full mb-2">

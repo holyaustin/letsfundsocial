@@ -13,38 +13,38 @@ import {
   coinbaseWallet,
   rainbowWallet,
 } from '@rainbow-me/rainbowkit/wallets'
-import { mainnet, hardhat } from 'wagmi/chains'
+import { arbitrumSepolia, arbitrum, hardhat } from 'wagmi/chains'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 import { Session } from 'next-auth'
 import { SessionProvider } from 'next-auth/react'
 
-const publicProviderAIA = process.env.NEXT_PUBLIC_AIA_RPC_URL
+const publicProviderAIA = process.env.NEXT_PUBLIC_ARBITRUM_RPC_URL
 
-const aiaTestnet: Chain = {
+const arbitrumTestnet: Chain = {
   id: 1_320,
-  name: 'AIA_Testnet',
-  network: 'aia',
+  name: 'ArbitrumTestnet',
+  network: 'arbtrumTestnet',
   iconUrl: 'https://testnet.aiascan.com/static/logo-dark-placeholder.svg',
   iconBackground: '#000000',
   nativeCurrency: {
     decimals: 18,
-    name: 'AIA',
-    symbol: 'AIA',
+    name: 'Arb',
+    symbol: 'ARB',
   },
   rpcUrls: {
-    public: { http: ['https://aia-dataseed1-testnet.aiachain.org'] },
-    default: { http: ['https://aia-dataseed1-testnet.aiachain.org'] },
+    public: { http: ['https://sepolia-rollup.arbitrum.io/rpc'] },
+    default: { http: ['https://sepolia-rollup.arbitrum.io/rpc'] },
   },
   blockExplorers: {
-    default: { name: 'Aia Block Explorer', url: 'https://testnet.aiascan.com/' },
-    etherscan: { name: 'Aia Block Explorer', url: 'https://testnet.aiascan.com/' },
+    default: { name: 'Arbitrum sepolia Block Explorer', url: 'https://sepolia-explorer.arbitrum.io/' },
+    etherscan: { name: 'Arbitrum sepolia Block Explorer', url: 'https://sepolia-explorer.arbitrum.io/' },
   },
   testnet: true,
 } 
 
 const { chains, publicClient } = configureChains(
-  [aiaTestnet, hardhat],
+  [arbitrumSepolia, arbitrum],
   [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID as string }), publicProvider()]
 )
 
